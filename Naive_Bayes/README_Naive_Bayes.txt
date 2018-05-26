@@ -1,4 +1,6 @@
-The input is going to be a file. 
+The input is going to be a file.
+
+### NOTE: Change file name location on line 21. 
 
 I have put in the two files in the same folder called politics.csv and politics_Trimmed.csv 
 
