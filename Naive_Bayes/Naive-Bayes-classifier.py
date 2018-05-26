@@ -17,8 +17,8 @@ import numpy as np
 ##		dataset[i] = [float(x) for x in dataset[i]]
 ##	return dataset
 
-#filename = '/Users/evanchang/Desktop/politics.csv'
-filename = '/Users/evanchang/Desktop/politics_Trimmed.csv'
+
+filename = 'File Location'
 
 def loadCsv(filename):
     raw = open(filename)
