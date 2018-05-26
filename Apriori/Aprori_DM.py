@@ -51,22 +51,22 @@ def find_candidates(dataset):
     freq_sets.sort()
     return map(frozenset,freq_sets) #map it out to be a key of a dict. 
 
-#C1 = find_candidates(read("/Users/evanchang/Desktop/10000_dataset.txt"))
-#C1 = find_candidates(read_data1("/Users/evanchang/Desktop/trimmed.csv"))
-#candidates = list(find_candidates(read_data1("/Users/evanchang/Desktop/trimmed.csv")))
-#candidates = list(find_candidates(read_data1("/Users/evanchang/Desktop/trimmed_totaldonate.csv")))
-candidates = list(find_candidates(read_data1("/Users/evanchang/Desktop/trimmed_totaldonate_zero.csv")))
-#candidates = list(find_candidates(read_data1("/Users/evanchang/Desktop/trimmed_obamadonate.csv")))
-#candidates = list(find_candidates(read_data1("/Users/evanchang/Desktop/trimmed_obamadonate_zero.csv")))
-#"/Users/evanchang/Desktop/trimmed_totaldonate.csv"
-#"/Users/evanchang/Desktop/trimmed_obamadonate.csv"
-#dataset = read_data1("/Users/evanchang/Desktop/trimmed.csv")
-#dataset = read_data1("/Users/evanchang/Desktop/trimmed_totaldonate.csv")
-dataset = read_data1("/Users/evanchang/Desktop/trimmed_totaldonate_zero.csv")
-#dataset = read_data1("/Users/evanchang/Desktop/trimmed_obamadonate.csv")
-#dataset =read_data1("/Users/evanchang/Desktop/trimmed_obamadonate_zero.csv")
-#len_candidates = len(list(find_freqsets_data1(read("/Users/evanchang/Desktop/10000_dataset.txt"))))
-#len_candidates = len(list(find_freqsets_data1(read("/Users/evanchang/Desktop/10000_dataset.txt"))))
+#C1 = find_candidates(read("10000_dataset.txt"))
+#C1 = find_candidates(read_data1("trimmed.csv"))
+#candidates = list(find_candidates(read_data1("trimmed.csv")))
+#candidates = list(find_candidates(read_data1("trimmed_totaldonate.csv")))
+candidates = list(find_candidates(read_data1("trimmed_totaldonate_zero.csv")))
+#candidates = list(find_candidates(read_data1("trimmed_obamadonate.csv")))
+#candidates = list(find_candidates(read_data1("trimmed_obamadonate_zero.csv")))
+#"trimmed_totaldonate.csv"
+#"trimmed_obamadonate.csv"
+#dataset = read_data1("trimmed.csv")
+#dataset = read_data1("trimmed_totaldonate.csv")
+dataset = read_data1("trimmed_totaldonate_zero.csv")
+#dataset = read_data1("trimmed_obamadonate.csv")
+#dataset =read_data1("trimmed_obamadonate_zero.csv")
+#len_candidates = len(list(find_freqsets_data1(read("10000_dataset.txt"))))
+#len_candidates = len(list(find_freqsets_data1(read("10000_dataset.txt"))))
 D = map(set, dataset)
 D_list = len(list(map(set,dataset)))
 
@@ -126,14 +126,14 @@ def joint_set(freq_sets, k):
 def apriori(dataset, minsupport = 0.05):
     #generates list of freq item sets including the joint sets
 #    These are going to be the freq sets in l to 
-#    C1 = list(find_candidates(read("/Users/evanchang/Desktop/10000_dataset.txt")))
-#    C1 =list(find_candidates(read_data1("/Users/evanchang/Desktop/data1.txt")))
-#    C1 = list(find_candidates(read_data1("/Users/evanchang/Desktop/data2.txt")))
-#    C1 =list(find_candidates(read_data1("/Users/evanchang/Desktop/trimmed.csv")))
-#    C1 =list(find_candidates(read_data1("/Users/evanchang/Desktop/trimmed_totaldonate.csv")))
-    C1 =list(find_candidates(read_data1("/Users/evanchang/Desktop/trimmed_totaldonate_zero.csv")))
-#    C1 =list(find_candidates(read_data1("/Users/evanchang/Desktop/trimmed_obamadonate.csv")))
-#    C1 =list(find_candidates(read_data1("/Users/evanchang/Desktop/trimmed_obamadonate_zero.csv")))
+#    C1 = list(find_candidates(read("10000_dataset.txt")))
+#    C1 =list(find_candidates(read_data1("data1.txt")))
+#    C1 = list(find_candidates(read_data1("data2.txt")))
+#    C1 =list(find_candidates(read_data1("trimmed.csv")))
+#    C1 =list(find_candidates(read_data1("trimmed_totaldonate.csv")))
+    C1 =list(find_candidates(read_data1("trimmed_totaldonate_zero.csv")))
+#    C1 =list(find_candidates(read_data1("trimmed_obamadonate.csv")))
+#    C1 =list(find_candidates(read_data1("trimmed_obamadonate_zero.csv")))
 
     D = map(set,dataset)
     D_list = len(list(map(set,dataset)))
