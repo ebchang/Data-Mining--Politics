@@ -217,8 +217,8 @@ def printCSV (dat):
         
 def run (depth):
     print ('Training stage (depth ' + str(depth) + '):')
-    dat = fold_data_training(read(r'/Users/evanchang/Desktop/politics.csv'))
-#    dat = fold_data_training(discretize(read(r'/Users/evanchang/Desktop/politics_Trimmed.csv')))
+    dat = fold_data_training(read(r'FILE Location'))
+#    dat = fold_data_training(discretize(read(r'File Location'))) # If you wnated to discretize the data tranining
     model = build_tree(dat, depth) 
     model.stringify()
     correct = 0
@@ -245,8 +245,8 @@ def run (depth):
     print (str(correct) + ' out of ' + str(count) + ' classed correctly (' + str(round(correct / float(count), 3) * 100) + '%).')
     print(str(zero_class_train) + " " + str(one_class_train) + " " + str(wrong_list_train))
     print ('Testing stage:')
-    dat = fold_data_testing(read(r'/Users/evanchang/Desktop/politics.csv'))
- #   dat = fold_data_testing(discretize(read(r'/Users/evanchang/Desktop/politics_Trimmed.csv')))
+    dat = fold_data_testing(read(r'File Name')) 
+ #   dat = fold_data_testing(discretize(read(r'/Users/evanchang/Desktop/politics_Trimmed.csv'))) #Discretize testing data
     correct = 0
     zero_class_test = 0
     one_class_test = 0
