@@ -15,3 +15,5 @@ To Generate Rules:
 rules = generateRules(l, support_data, min_confidence) 
 
 The output will give you frozen sets with the items that are frequently found by the minsupport and confidence. 
+
+The Results are in the Apriori Document.docx
