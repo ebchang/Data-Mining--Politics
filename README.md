@@ -1,5 +1,5 @@
 # Description
-This is a repo that demonstrates three algorithms in use to analyze a political data.
+This is a repo that demonstrates three algorithms in use to analyze political data.
   - Apriori 
   - Decision Trees
   - Naive bayes
